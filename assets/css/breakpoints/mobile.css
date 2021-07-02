@@ -1,0 +1,8 @@
+@media (max-width: 569px) {
+  section#tentang .nama-website {
+    font-size: 25px !important;
+  }
+  section#home .slider img {
+    height: 50vh !important;
+  }
+}

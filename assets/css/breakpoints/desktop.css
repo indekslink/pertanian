@@ -1,0 +1,326 @@
+/* navbar */
+.my-nav {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  transition: background 0.5s;
+}
+.my-nav.show {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  background-color: white;
+}
+
+.my-nav.show #parent-menu a {
+  color: black;
+}
+.my-nav.show .logo a {
+  color: red;
+}
+.my-nav.show .hamburger span {
+  background-color: black;
+}
+.my-nav .container {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.my-nav a {
+  text-decoration: none;
+}
+
+.my-nav .logo a {
+  display: flex;
+  color: white;
+  transition: 0.5s;
+  align-items: center;
+}
+
+.my-nav .logo img {
+  width: 80px;
+  height: 80px;
+}
+.my-nav .logo span {
+  text-shadow: -1px 1px 0 green, 1px 1px 0 green, 1px -1px 0 green,
+    -1px -1px 0 green;
+
+  margin-left: 10px;
+  font-size: 25px;
+  font-family: var(--montserrat);
+  font-weight: bold;
+}
+
+.my-nav #parent-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+
+  padding: 0;
+  width: 70vmin;
+}
+.my-nav #parent-menu a {
+  font-size: 17px;
+  color: white;
+
+  transition: 0.5s ease;
+  font-family: var(--poppins);
+}
+.my-nav #parent-menu li:not(.link-dropdown, .child-dropdown) > a::after {
+  border-radius: 5px;
+  content: "";
+  height: 3px;
+  display: block;
+  margin: 0 auto;
+  opacity: 0;
+  width: 0;
+  transition: 0.5s ease;
+  background-color: red;
+}
+.my-nav #parent-menu li:not(.link-dropdown, .child-dropdown) > a:hover::after,
+.my-nav #parent-menu li:not(.link-dropdown, .child-dropdown) > a.active::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.my-nav .hamburger {
+  display: none;
+  flex-direction: column;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  justify-content: space-around;
+}
+.my-nav .hamburger span {
+  height: 4px;
+  background-color: white;
+  display: block;
+  transition: 0.5s linear;
+  border-radius: 5px;
+}
+.my-nav .hamburger.show span:nth-child(1) {
+  transform: rotate(405deg) translate(7px, 7.5px);
+}
+.my-nav .hamburger.show span:nth-child(3) {
+  transform: rotate(-405deg) translate(7px, -7px);
+}
+.my-nav .hamburger.show span:nth-child(2) {
+  opacity: 0;
+  width: 0;
+}
+
+.link-dropdown {
+  position: relative;
+
+  margin-top: -3px;
+}
+.link-dropdown .parent-link-dropdown {
+  list-style-type: none;
+  pointer-events: none;
+  transition: 0.5s ease;
+  margin: 0;
+  opacity: 0;
+  padding: 0px 1rem;
+  background-color: #eee;
+  position: absolute;
+  top: 50px;
+
+  border-radius: 5px;
+}
+.link-dropdown .parent-link-dropdown::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.link-dropdown .parent-link-dropdown li {
+  padding: 0.5rem 0;
+}
+.link-dropdown .parent-link-dropdown a {
+  color: black !important;
+  white-space: nowrap;
+}
+.link-dropdown.show .parent-link-dropdown {
+  top: 40px;
+  pointer-events: auto;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+/* .link-dropdown:hover .parent-link-dropdown {
+  top: 40px;
+  pointer-events: auto;
+  opacity: 1;
+  transition: 0.5s ease;
+} */
+
+/* .link-dropdown.show .parent-link-dropdown {
+  height: 100%;
+}
+.link-dropdown.show i {
+  transform: rotate(180deg);
+}
+.link-dropdown i {
+  transition: 0.5s ease;
+}
+
+.link-dropdown .parent-link-dropdown {
+  list-style-type: none;
+  width: 100%;
+  transition: 0.5s ease;
+  margin: 0;
+  overflow: hidden;
+  height: 0;
+  padding: 0px 1rem;
+  background-color: #eee;
+}
+
+.link-dropdown .parent-link-dropdown li {
+  padding: 0.5rem 0;
+} */
+
+/* section home */
+section#home {
+  background-image: url(../../tanaman.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding-top: 96px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+/* section home */
+section#home::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+section#home .container {
+  position: relative;
+  z-index: 3;
+}
+section#home .text {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+section#home .judul-website {
+  font-size: 40px;
+  text-shadow: -1px 1px 0 red, 1px 1px 0 red, 1px -1px 0 red, -1px -1px 0 red;
+  transform: scale(1, 2.5);
+  /* color: red; */
+  font-family: var(--montserrat);
+}
+section#home .desc-website {
+  font-size: 20px;
+}
+section#home .slider img {
+  height: 50vmin;
+  border-radius: 10%;
+}
+button.hover-btn {
+  position: relative;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 1rem 2rem;
+  transition: background 0.5s linear;
+  overflow: hidden;
+  background-color: #2fc32f;
+}
+button.hover-btn span {
+  position: relative;
+  z-index: 3;
+}
+button.hover-btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  transition: background 0.5s linear, 0.5s linear;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: rotate(30deg);
+  background-color: #4bef4b;
+}
+button.hover-btn::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  transition: background 0.5s linear, 0.5s linear;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: rotate(30deg) translateY(100%);
+  background-color: #2fc32f;
+}
+button.hover-btn:hover {
+  background-color: #4bef4b;
+}
+button.hover-btn:hover::before {
+  transform: rotate(30deg) translateY(-100%);
+  background-color: #4bef4b;
+}
+button.hover-btn:hover::after {
+  transform: rotate(30deg) translateY(0px);
+  background-color: #2fc32f;
+}
+
+/* section content */
+.section-content .kolom-berita {
+  border-left: 2px solid #dedede;
+}
+.section-content .kolom-berita .section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-content .kolom-berita .section-title span {
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+  font-family: var(--poppins) !important;
+}
+.section-content .list-section section {
+  padding: 1rem 0;
+}
+.section-title {
+  font-family: var(--neue);
+  font-size: 25px;
+  color: red;
+}
+section#tentang {
+  text-align: center;
+  background-color: white;
+}
+section#tentang .nama-website {
+  font-size: 30px;
+  transform: scale(1, 2);
+  font-weight: bold;
+}
+section#tentang .text-desc {
+  text-align: justify;
+  padding-top: 1rem;
+}
+.text-desc {
+  font-size: 14px;
+}

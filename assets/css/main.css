@@ -1,0 +1,9 @@
+@import url(./fonts.css);
+@import url(./breakpoints/desktop.css);
+@import url(./breakpoints/tablet.css);
+@import url(./breakpoints/mobile.css);
+@import url(./breakpoints/custom.css);
+body {
+  font-family: var(--poppins);
+  background-color: #f6f9fc;
+}
