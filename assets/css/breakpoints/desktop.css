@@ -50,9 +50,9 @@
   text-shadow: -1px 1px 0 green, 1px 1px 0 green, 1px -1px 0 green,
     -1px -1px 0 green;
 
-  margin-left: 10px;
+  margin-left: 20px;
   font-size: 25px;
-  font-family: var(--montserrat);
+  transform: scale(1.5, 1);
   font-weight: bold;
 }
 
@@ -99,7 +99,7 @@
   justify-content: space-around;
 }
 .my-nav .hamburger span {
-  height: 4px;
+  height: 3px;
   background-color: white;
   display: block;
   transition: 0.5s linear;
@@ -128,17 +128,17 @@
   margin: 0;
   opacity: 0;
   padding: 0px 1rem;
-  background-color: #eee;
+  background-color: var(--dropdown-color);
   position: absolute;
   top: 50px;
-
+  left: 0;
   border-radius: 5px;
 }
 .link-dropdown .parent-link-dropdown::before {
   content: "";
   width: 30px;
   height: 30px;
-  background-color: #eee;
+  background-color: var(--dropdown-color);
   position: absolute;
   top: -10px;
   left: 20px;
@@ -149,7 +149,7 @@
   padding: 0.5rem 0;
 }
 .link-dropdown .parent-link-dropdown a {
-  color: black !important;
+  color: var(--link-dropdown-color) !important;
   white-space: nowrap;
 }
 .link-dropdown.show .parent-link-dropdown {
@@ -158,37 +158,10 @@
   opacity: 1;
   transition: 0.5s ease;
 }
-/* .link-dropdown:hover .parent-link-dropdown {
-  top: 40px;
-  pointer-events: auto;
-  opacity: 1;
-  transition: 0.5s ease;
-} */
-
-/* .link-dropdown.show .parent-link-dropdown {
+img.vmin {
   height: 100%;
+  max-height: 50vmin !important;
 }
-.link-dropdown.show i {
-  transform: rotate(180deg);
-}
-.link-dropdown i {
-  transition: 0.5s ease;
-}
-
-.link-dropdown .parent-link-dropdown {
-  list-style-type: none;
-  width: 100%;
-  transition: 0.5s ease;
-  margin: 0;
-  overflow: hidden;
-  height: 0;
-  padding: 0px 1rem;
-  background-color: #eee;
-}
-
-.link-dropdown .parent-link-dropdown li {
-  padding: 0.5rem 0;
-} */
 
 /* section home */
 section#home {
@@ -225,6 +198,7 @@ section#home .text {
 }
 section#home .judul-website {
   font-size: 40px;
+  line-height: 1;
   text-shadow: -1px 1px 0 red, 1px 1px 0 red, 1px -1px 0 red, -1px -1px 0 red;
   transform: scale(1, 2.5);
   /* color: red; */
@@ -242,7 +216,7 @@ button.hover-btn {
   border: none;
   font-weight: bold;
   font-size: 18px;
-  padding: 1rem 2rem;
+
   transition: background 0.5s linear;
   overflow: hidden;
   background-color: #2fc32f;
@@ -286,9 +260,7 @@ button.hover-btn:hover::after {
 }
 
 /* section content */
-.section-content .kolom-berita {
-  border-left: 2px solid #dedede;
-}
+
 .section-content .kolom-berita .section-title {
   display: flex;
   justify-content: space-between;
@@ -308,19 +280,109 @@ button.hover-btn:hover::after {
   font-size: 25px;
   color: red;
 }
-section#tentang {
-  text-align: center;
-  background-color: white;
+.text-desc {
+  font-size: 14px;
+  text-align: justify;
 }
-section#tentang .nama-website {
+.text-desc p {
+  margin-bottom: 0.5rem;
+}
+section .section-headline {
   font-size: 30px;
   transform: scale(1, 2);
   font-weight: bold;
 }
+section#tentang {
+  text-align: center;
+}
+
 section#tentang .text-desc {
   text-align: justify;
   padding-top: 1rem;
 }
-.text-desc {
+
+section.black {
+  background-color: #273036;
+  color: white;
+}
+.title-section-content {
+  font-size: calc(2vw + 35px);
+  font-weight: bold;
+}
+section#content-1 .title-section-content {
+  text-align: center;
+
+  color: lightgreen;
+  text-shadow: -1px 1px 0 black, 1px 1px 0 black, 1px -1px 0 black,
+    -1px -1px 0 black;
+}
+section:not(#home) {
+  margin-top: 5rem;
+}
+section#content-1 .child {
+  text-align: center;
+  padding: 2rem;
+  /* transform: scale(0.95); */
+  transition: 0.5s ease;
+}
+
+section#content-1 .child i {
+  font-size: 60px;
+  background-image: -webkitl-linear-gradient(to right, red, green);
+  background-image: linear-gradient(to right, red, green);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+section#content-1 .child .text-child div:nth-child(1) {
+  font-size: calc(2vw + 10px);
+  font-weight: 500;
+  margin: 0.5rem;
+}
+section#content-1 .child .text-child div:nth-child(2) {
   font-size: 14px;
+  margin-top: 1rem;
+}
+section#content-1 .row .kolom {
+  background-color: #f6f9fc;
+  transition: 1s ease;
+}
+section#content-1 .row .kolom:hover {
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+section#struktur-team {
+  background-color: #f6f9fc;
+}
+section#struktur-team .card-body {
+  padding: 0.5rem !important;
+}
+
+section#struktur-team .kolom-gambar img {
+  width: 120px;
+  height: 120px;
+}
+section#struktur-team .kolom-gambar,
+section#struktur-team .kolom-informasi {
+  display: flex;
+  justify-content: space-evenly;
+
+  flex-direction: column;
+}
+section#struktur-team .kolom-gambar {
+  align-items: center;
+}
+
+footer {
+  background-color: #273036;
+}
+
+/* my owl carousel */
+.owl-stage {
+  display: flex;
+}
+.owl-stage .card,
+.owl-stage .card .row {
+  height: 100%;
 }
