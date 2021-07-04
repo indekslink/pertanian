@@ -18,8 +18,10 @@
 .my-nav.show #parent-menu a {
   color: black;
 }
-.my-nav.show .logo a {
-  color: red;
+
+.my-nav.show .logo span {
+  color: green;
+  text-shadow: none;
 }
 .my-nav.show .hamburger span {
   background-color: black;
@@ -50,9 +52,9 @@
   text-shadow: -1px 1px 0 green, 1px 1px 0 green, 1px -1px 0 green,
     -1px -1px 0 green;
 
-  margin-left: 20px;
+  margin-left: 5px;
   font-size: 25px;
-  transform: scale(1.5, 1);
+
   font-weight: bold;
 }
 
@@ -82,7 +84,7 @@
   opacity: 0;
   width: 0;
   transition: 0.5s ease;
-  background-color: red;
+  background-color: green;
 }
 .my-nav #parent-menu li:not(.link-dropdown, .child-dropdown) > a:hover::after,
 .my-nav #parent-menu li:not(.link-dropdown, .child-dropdown) > a.active::after {
@@ -99,7 +101,7 @@
   justify-content: space-around;
 }
 .my-nav .hamburger span {
-  height: 3px;
+  height: 2.5px;
   background-color: white;
   display: block;
   transition: 0.5s linear;
@@ -275,18 +277,7 @@ button.hover-btn:hover::after {
 .section-content .list-section section {
   padding: 1rem 0;
 }
-.section-title {
-  font-family: var(--neue);
-  font-size: 25px;
-  color: red;
-}
-.text-desc {
-  font-size: 14px;
-  text-align: justify;
-}
-.text-desc p {
-  margin-bottom: 0.5rem;
-}
+
 section .section-headline {
   font-size: 30px;
   transform: scale(1, 2);
@@ -306,12 +297,12 @@ section.black {
   color: white;
 }
 .title-section-content {
-  font-size: calc(2vw + 35px);
+  font-size: calc(2vw + 20px);
   font-weight: bold;
 }
 section#content-1 .title-section-content {
   text-align: center;
-
+  font-size: calc(2vw + 35px);
   color: lightgreen;
   text-shadow: -1px 1px 0 black, 1px 1px 0 black, 1px -1px 0 black,
     -1px -1px 0 black;
@@ -335,7 +326,7 @@ section#content-1 .child i {
   background-clip: text;
 }
 section#content-1 .child .text-child div:nth-child(1) {
-  font-size: calc(2vw + 10px);
+  font-size: calc(2vw + 15px);
   font-weight: 500;
   margin: 0.5rem;
 }
@@ -352,9 +343,10 @@ section#content-1 .row .kolom:hover {
   position: relative;
 }
 
-section#struktur-team {
+/* section#struktur-team {
+  margin-top: 0;
   background-color: #f6f9fc;
-}
+} */
 section#struktur-team .card-body {
   padding: 0.5rem !important;
 }
@@ -376,13 +368,4 @@ section#struktur-team .kolom-gambar {
 
 footer {
   background-color: #273036;
-}
-
-/* my owl carousel */
-.owl-stage {
-  display: flex;
-}
-.owl-stage .card,
-.owl-stage .card .row {
-  height: 100%;
 }

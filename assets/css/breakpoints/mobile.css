@@ -5,4 +5,12 @@
   section#home .slider img {
     height: 50vh !important;
   }
+  .my-nav .logo img {
+    width: 60px;
+    height: 60px;
+  }
+  .my-nav .logo span {
+    margin-left: 0px;
+    font-size: 22px;
+  }
 }

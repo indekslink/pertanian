@@ -33,6 +33,13 @@
     flex-direction: column;
     align-items: flex-start;
   }
+  .link-dropdown a {
+    width: 100%;
+  }
+  .link-dropdown a i {
+    font-size: 25px;
+    float: right;
+  }
 
   .link-dropdown.show .parent-link-dropdown {
     height: 100%;
@@ -55,7 +62,7 @@
     overflow: hidden;
     height: 0;
     padding: 0px 0.5rem;
-    background-color: #eee;
+
     position: initial;
   }
 
