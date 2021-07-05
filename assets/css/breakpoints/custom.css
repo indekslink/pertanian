@@ -2,6 +2,9 @@
   section#home {
     height: auto;
   }
+  /* section#home {
+    background-image: url(../../images/bg/blob-scene-haikei-tablet.svg);
+  } */
   section#home .text {
     height: 60vh;
   }

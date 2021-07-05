@@ -66,7 +66,8 @@
   margin: 0;
 
   padding: 0;
-  width: 70vmin;
+  width: 45vmax;
+  max-width: 70vmin;
 }
 .my-nav #parent-menu a {
   font-size: 17px;
@@ -84,7 +85,7 @@
   opacity: 0;
   width: 0;
   transition: 0.5s ease;
-  background-color: green;
+  background-color: #2fc32f;
 }
 .my-nav #parent-menu li:not(.link-dropdown, .child-dropdown) > a:hover::after,
 .my-nav #parent-menu li:not(.link-dropdown, .child-dropdown) > a.active::after {
@@ -170,6 +171,7 @@ section#home {
   background-image: url(../../tanaman.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
   background-attachment: fixed;
   position: relative;
   padding-top: 96px;
@@ -214,6 +216,7 @@ section#home .slider img {
   border-radius: 10%;
 }
 button.hover-btn {
+  color: white;
   position: relative;
   border: none;
   font-weight: bold;
@@ -221,7 +224,7 @@ button.hover-btn {
 
   transition: background 0.5s linear;
   overflow: hidden;
-  background-color: #2fc32f;
+  background-color: green;
 }
 button.hover-btn span {
   position: relative;
@@ -236,7 +239,7 @@ button.hover-btn::before {
   left: 0;
   right: 0;
   transform: rotate(30deg);
-  background-color: #4bef4b;
+  background-color: #2fc32f;
 }
 button.hover-btn::after {
   position: absolute;
@@ -247,18 +250,18 @@ button.hover-btn::after {
   left: 0;
   right: 0;
   transform: rotate(30deg) translateY(100%);
-  background-color: #2fc32f;
+  background-color: green;
 }
 button.hover-btn:hover {
-  background-color: #4bef4b;
+  background-color: #2fc32f;
 }
 button.hover-btn:hover::before {
   transform: rotate(30deg) translateY(-100%);
-  background-color: #4bef4b;
+  background-color: #2fc32f;
 }
 button.hover-btn:hover::after {
   transform: rotate(30deg) translateY(0px);
-  background-color: #2fc32f;
+  background-color: green;
 }
 
 /* section content */
@@ -307,10 +310,9 @@ section#content-1 .title-section-content {
   text-shadow: -1px 1px 0 black, 1px 1px 0 black, 1px -1px 0 black,
     -1px -1px 0 black;
 }
-section:not(#home) {
-  margin-top: 5rem;
-}
-section#content-1 .child {
+
+section#content-1 .child,
+section#pilar-bisnis .child {
   text-align: center;
   padding: 2rem;
   /* transform: scale(0.95); */
@@ -325,28 +327,29 @@ section#content-1 .child i {
   -webkit-background-clip: text;
   background-clip: text;
 }
-section#content-1 .child .text-child div:nth-child(1) {
-  font-size: calc(2vw + 15px);
-  font-weight: 500;
-  margin: 0.5rem;
+section#content-1 .child .text-child div:nth-child(1),
+section#pilar-bisnis .child .text-child div:nth-child(1) {
+  font-size: calc(1vw + 20px);
+  font-weight: 700;
+  margin: 0.5rem 0;
 }
-section#content-1 .child .text-child div:nth-child(2) {
+section#content-1 .child .text-child div:nth-child(2),
+section#pilar-bisnis .child .text-child div:nth-child(2) {
   font-size: 14px;
   margin-top: 1rem;
+  text-align: justify;
 }
-section#content-1 .row .kolom {
+section#content-1 .row .kolom,
+section#pilar-bisnis .row .kolom {
   background-color: #f6f9fc;
   transition: 1s ease;
 }
-section#content-1 .row .kolom:hover {
+section#content-1 .row .kolom:hover,
+section#pilar-bisnis .row .kolom:hover {
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
   position: relative;
 }
 
-/* section#struktur-team {
-  margin-top: 0;
-  background-color: #f6f9fc;
-} */
 section#struktur-team .card-body {
   padding: 0.5rem !important;
 }
@@ -368,4 +371,7 @@ section#struktur-team .kolom-gambar {
 
 footer {
   background-color: #273036;
+}
+footer .copyright {
+  background-color: #1b1b1b;
 }

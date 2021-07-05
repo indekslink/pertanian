@@ -14,14 +14,14 @@
     padding: 0 0.5rem;
     justify-content: space-evenly;
     overflow: hidden;
-    background-color: white;
+    background-color: #273036;
     width: 100%;
-
+    max-width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   .my-nav #parent-menu a {
-    color: black;
+    color: white !important;
   }
   .my-nav #parent-menu.show {
     height: 60vh;
@@ -43,6 +43,7 @@
 
   .link-dropdown.show .parent-link-dropdown {
     height: 100%;
+    margin-top: 1rem;
   }
   .link-dropdown.show i {
     transform: rotate(180deg);

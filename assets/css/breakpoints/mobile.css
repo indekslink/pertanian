@@ -2,6 +2,9 @@
   section#tentang .nama-website {
     font-size: 25px !important;
   }
+  /* section#home {
+    background-image: url(../../images/bg/blob-scene-haikei-mobile.svg) !important;
+  } */
   section#home .slider img {
     height: 50vh !important;
   }
@@ -12,5 +15,8 @@
   .my-nav .logo span {
     margin-left: 0px;
     font-size: 22px;
+  }
+  section .section-headline {
+    font-size: 25px;
   }
 }
