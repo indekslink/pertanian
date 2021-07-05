@@ -369,6 +369,17 @@ section#struktur-team .kolom-gambar {
   align-items: center;
 }
 
+section#struktur-team .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+section#struktur-team .card {
+  height: 100%;
+  border: none;
+  background-color: #f6f9fc;
+}
+
 footer {
   background-color: #273036;
 }
