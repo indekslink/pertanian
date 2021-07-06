@@ -19,7 +19,20 @@
   section .section-headline {
     font-size: 25px;
   }
+  section {
+    scroll-margin-top: 100px;
+  }
   #galeri .card a {
     height: 150px;
+  }
+  #berita-terkini img {
+    max-height: 110px;
+    max-width: 110px;
+  }
+  #berita-terkini .info-news .title-news {
+    font-size: 15px;
+  }
+  #berita-terkini .info-news {
+    font-size: 12px;
   }
 }

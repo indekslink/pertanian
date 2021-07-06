@@ -42,6 +42,9 @@
     <title>Galeri &mdash; CV. RIZKI ALAM LESTARI</title>
   </head>
   <body>
+    <button class="to-top btn rounded-circle shadow-lg btn-success btn-lg">
+      <i class="fas fa-arrow-up"></i>
+    </button>
     <div class="loading">
       <div class="content">
         <img src="./assets/images/logo-img.png" alt="" />
@@ -53,10 +56,10 @@
         </div>
       </div>
     </div>
-    <div class="my-nav">
+    <div class="my-nav shadow">
       <div class="container">
         <div class="logo">
-          <a href="#home">
+          <a href="/">
             <img src="./assets/images/logo-img.png" alt="" />
             <span class="text">RIZKI ALAM LESTARI</span>
           </a>
@@ -73,10 +76,14 @@
             ></a>
             <ul class="parent-link-dropdown">
               <li class="child-dropdown">
-                <a href="#" class="child-menu">Informasi Perusahaan</a>
+                <a href="/tentang-kami" class="child-menu"
+                  >Informasi Perusahaan</a
+                >
               </li>
               <li class="child-dropdown">
-                <a href="#" class="child-menu">Struktur Perusahaan</a>
+                <a href="/#struktur-team" class="child-menu"
+                  >Struktur Perusahaan</a
+                >
               </li>
             </ul>
           </li>
@@ -86,14 +93,16 @@
               >GALERI</a
             >
           </li>
-          <li><a href="#berita" class="child-menu text-dark">BERITA</a></li>
-          <li><a href="#kontak" class="child-menu text-dark">KONTAK</a></li>
+          <li>
+            <a href="/berita.html" class="child-menu text-dark">BERITA</a>
+          </li>
+          <li><a href="/#kontak" class="child-menu text-dark">KONTAK</a></li>
         </ul>
       </div>
     </div>
 
-    <section id="galeri" class="pt-4">
-      <div class="container">
+    <section id="galeri" class="pt-sm-4 pt-2">
+      <div class="container py-3">
         <div class="title-section-content text-center">Galeri</div>
         <div class="row mt-3 g-0 justify-content-center">
           <div class="col-lg-3 col-md-4 col-6">

@@ -10,8 +10,15 @@ window.onscroll = () => {
   document
     .querySelector(".my-nav")
     .classList.toggle("show", window.scrollY > 50);
+
+  document
+    .querySelector("button.to-top")
+    .classList.toggle("show", window.scrollY > 100);
 };
 
+document.querySelector("button.to-top").addEventListener("click", function () {
+  window.scrollTo(0, 0);
+});
 // menuDropdown.addEventListener("click", function () {
 //   this.classList.toggle("show");
 //   this.addEventListener("mouseleave", function () {
@@ -65,7 +72,9 @@ const linkLogo = document.querySelector(".my-nav .logo a");
 linkMenu.push(linkLogo);
 linkMenu.forEach((link) => {
   link.addEventListener("click", function (e) {
-    // e.preventDefault();
+    if (link.classList.contains("dropdown-link")) {
+      e.preventDefault();
+    }
   });
 });
 

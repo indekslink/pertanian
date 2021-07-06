@@ -84,4 +84,11 @@
   #galeri .card a {
     height: 200px;
   }
+  #berita-terkini .info-news .title-news {
+    font-size: 1rem;
+  }
+  #berita-terkini img {
+    max-height: 150px;
+    max-width: 150px;
+  }
 }

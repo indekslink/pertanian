@@ -168,7 +168,6 @@ img.vmin {
 
 /* section home */
 section#home {
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -280,7 +279,9 @@ button.hover-btn:hover::after {
 .section-content .list-section section {
   padding: 1rem 0;
 }
-
+section {
+  scroll-margin-top: 120px;
+}
 section .section-headline {
   font-size: 30px;
   transform: scale(1, 2);
@@ -396,6 +397,11 @@ section#struktur-team .card {
 
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
 }
+/* #berita-terkini .container,
+#galeri .container {
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+} */
 #berita-terkini img {
   max-width: 200px;
   max-height: 200px;
@@ -404,8 +410,12 @@ section#struktur-team .card {
 }
 #berita-terkini .info-news {
   display: flex;
+  font-size: 14px;
   flex-direction: column;
   justify-content: space-evenly;
+}
+#berita-terkini .info-news .title-news {
+  font-size: 1.5rem;
 }
 /* #galeri .row div {
   overflow: hidden;

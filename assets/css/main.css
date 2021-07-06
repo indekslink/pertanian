@@ -80,3 +80,15 @@ section:not(#home) {
 .container-sections section {
   margin: 2.5rem 0 !important;
 }
+button.to-top {
+  position: fixed;
+  right: 20px;
+  bottom: -20px;
+  z-index: 9999;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+button.to-top.show {
+  opacity: 1;
+  bottom: 20px;
+}
