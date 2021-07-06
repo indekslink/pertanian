@@ -16,6 +16,11 @@
       crossorigin="anonymous"
     />
 
+    <!-- fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
     <!-- Owl Carousel -->
     <link
       rel="stylesheet"
@@ -58,7 +63,7 @@
         </div>
         <div class="hamburger"><span></span><span></span><span></span></div>
         <ul id="parent-menu">
-          <li><a href="#home" class="child-menu active">HOME</a></li>
+          <li><a href="/" class="child-menu active">HOME</a></li>
           <li class="link-dropdown">
             <a href="#about-use" class="child-menu dropdown-link"
               >TENTANG <i class="fas fa-angle-down"></i
@@ -73,14 +78,14 @@
             </ul>
           </li>
 
-          <li><a href="#galeri" class="child-menu">GALERI</a></li>
+          <li><a href="/galeri.html" class="child-menu">GALERI</a></li>
           <li><a href="#berita" class="child-menu">BERITA</a></li>
           <li><a href="#kontak" class="child-menu">KONTAK</a></li>
         </ul>
       </div>
     </div>
 
-    <section id="home" class="pb-4">
+    <section id="home" class="pb-4" style="background-image: url(./assets/tanaman.png);">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-7 text">
@@ -151,6 +156,7 @@
       <div class="container">
         <div class="row g-4 flex-lg-row-reverse flex-row">
           <div class="col-lg-7 col-md-6">
+            <div class="section-title">tentang kami</div>
             <div class="section-headline">CV. RIZKI ALAM LESTARI</div>
             <div
               class="text-desc show-selengkapnya"
@@ -260,8 +266,8 @@
                 <div class="title-section-content text-md-center text-start">
                   Super Team
                 </div>
-                <div class="row g-4 justify-content-center">
-                  <div class="col-md-6 kolom-informasi">
+                <div class="row g-0 parent-kolom justify-content-center">
+                  <div class="col-md-6 kolom-hover py-3 kolom-informasi">
                     <div class="card h-100">
                       <div class="card-body">
                         <div class="nama fw-bold text-center fs-4">Supardi</div>
@@ -272,7 +278,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6 kolom-informasi">
+                  <div class="col-md-6 kolom-hover py-3 kolom-informasi">
                     <div class="card h-100">
                       <div class="card-body">
                         <div class="nama fw-bold text-center fs-4">
@@ -286,7 +292,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6 kolom-informasi">
+                  <div class="col-md-6 kolom-hover py-3 kolom-informasi">
                     <div class="card h-100">
                       <div class="card-body">
                         <div class="nama fw-bold text-center fs-4">
@@ -299,7 +305,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6 kolom-informasi">
+                  <div class="col-md-6 kolom-hover py-3 kolom-informasi">
                     <div class="card h-100">
                       <div class="card-body">
                         <div class="nama fw-bold text-center fs-4">Sartuji</div>
@@ -310,7 +316,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6 kolom-informasi">
+                  <div class="col-md-6 kolom-hover py-3 kolom-informasi">
                     <div class="card h-100">
                       <div class="card-body">
                         <div class="nama fw-bold text-center fs-4">Efendi</div>
@@ -321,7 +327,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6 kolom-informasi">
+                  <div class="col-md-6 kolom-hover py-3 kolom-informasi">
                     <div class="card h-100">
                       <div class="card-body">
                         <div class="nama fw-bold text-center fs-4">
@@ -334,7 +340,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6 kolom-informasi">
+                  <div class="col-md-6 kolom-hover py-3 kolom-informasi">
                     <div class="card h-100">
                       <div class="card-body">
                         <div class="nama fw-bold text-center fs-4">Mulyadi</div>
@@ -353,8 +359,8 @@
                 <div class="title-section-content text-md-center text-start">
                   Founder & Co-Founder
                 </div>
-                <div class="row g-4">
-                  <div class="col-md-6">
+                <div class="row g-0 parent-kolom">
+                  <div class="col-md-6 kolom-hover py-3">
                     <div class="card">
                       <div class="card-body">
                         <div class="row">
@@ -385,7 +391,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 kolom-hover py-3">
                     <div class="card">
                       <div class="card-body">
                         <div class="row">
@@ -420,7 +426,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 kolom-hover py-3">
                     <div class="card">
                       <div class="card-body">
                         <div class="row">
@@ -460,7 +466,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 kolom-hover py-3">
                     <div class="card">
                       <div class="card-body">
                         <div class="row">
@@ -876,7 +882,7 @@
       </section>
     </div>
 
-    <div id="berita-terkini">
+    <section id="berita-terkini">
       <div class="container">
         <div
           class="
@@ -952,31 +958,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <section id="galeri" class="mt-1">
-      <div class="container">
-        <div
-          class="
-            section-selengkap
-            d-flex
-            justify-content-between
-            align-items-center
-            flex-wrap
-          "
-        >
-          <div class="title-section-content text-center">Galeri</div>
-          <a href="" class="text-small"
-            >Selengkapnya <i class="fas fa-long-arrow-alt-right"></i
-          ></a>
-        </div>
-        <div class="row mt-3 g-0 justify-content-center">
-          <div class="col-md-3 col-sm-4 col-6"></div>
-          <div class="col-md-3 col-sm-4 col-6"></div>
-          <div class="col-md-3 col-sm-4 col-6"></div>
-          <div class="col-md-3 col-sm-4 col-6"></div>
-        </div>
-      </div>
     </section>
+
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
         fill="#273036"
@@ -986,7 +969,7 @@
     </svg>
     <footer>
       <div class="content-footer text-light">
-        <div class="container pb-4">
+        <div class="container pb-4 pt-2">
           <div class="row g-4 justify-content-between">
             <div class="col-md-3 col-sm-5">
               <div class="title-footer fw-bold fs-5 mb-2">Hubungi Kami</div>
@@ -1206,6 +1189,9 @@
     ></script>
     <!-- jquery -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 
     <!-- owl carousel -->
     <script src="./assets/vendor/owl-carousel/olw-carousel.min.js"></script>

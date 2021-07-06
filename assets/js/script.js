@@ -65,7 +65,7 @@ const linkLogo = document.querySelector(".my-nav .logo a");
 linkMenu.push(linkLogo);
 linkMenu.forEach((link) => {
   link.addEventListener("click", function (e) {
-    e.preventDefault();
+    // e.preventDefault();
   });
 });
 
@@ -111,3 +111,19 @@ prevent.forEach((link) => {
 window.onload = function () {
   document.querySelector(".loading").classList.add("close");
 };
+
+// add lightbox for galery images
+const galleries = document.querySelectorAll("#galeri img");
+galleries.forEach((g) => {
+  g.classList.add("add-lightbox");
+  let oriHtml = g.parentElement.innerHTML;
+  let src = g.getAttribute("src");
+  let caption = g.nextElementSibling.innerHTML;
+
+  // tambahakn element lightbox
+  g.parentElement.innerHTML = elementLightbox("galeri", src, caption, oriHtml);
+});
+
+function elementLightbox(id, src, caption, childEl) {
+  return `<a class="parent-lightbox" data-fancybox="${id}" data-caption="${caption}" data-src="${src}">${childEl}</a>`;
+}

@@ -81,4 +81,7 @@
     padding-left: 0.5;
     padding-right: 0.5;
   }
+  #galeri .card a {
+    height: 200px;
+  }
 }
