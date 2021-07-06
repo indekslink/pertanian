@@ -379,6 +379,26 @@ section#struktur-team .card {
   border: none;
   background-color: #f6f9fc;
 }
+#berita-terkini {
+  padding: 0.5rem 0;
+}
+#berita-terkini .item {
+  transition: 0.5s ease;
+}
+#berita-terkini .item:hover {
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+}
+#berita-terkini img {
+  max-width: 200px;
+  max-height: 200px;
+  width: 100%;
+  height: 100%;
+}
+#berita-terkini .info-news {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 
 footer {
   background-color: #273036;

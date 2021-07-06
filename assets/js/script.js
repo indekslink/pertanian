@@ -45,6 +45,19 @@ $("#struktur-team .owl-carousel").owlCarousel({
     },
   },
 });
+$("#berita-terkini .owl-carousel").owlCarousel({
+  margin: 10,
+  stagePadding: 20,
+  dots: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    569: {
+      items: 2,
+    },
+  },
+});
 
 // link prevent defaul
 let linkMenu = Array.from(document.querySelectorAll("a.child-menu"));
