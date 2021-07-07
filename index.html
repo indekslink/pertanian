@@ -21,6 +21,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.0-alpha.4/dist/panzoom.controls.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.0-alpha.4/dist/panzoom.css"
+    />
+
     <!-- Owl Carousel -->
     <link
       rel="stylesheet"
@@ -30,6 +39,9 @@
       rel="stylesheet"
       href="./assets/vendor/owl-carousel/owl-carousel-theme.min.css"
     />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="./assets/vendor/aos/aos.css" />
 
     <!-- font awesome -->
     <link
@@ -100,18 +112,39 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-7 text">
-            <div class="judul-website">CV. RIZKI ALAM LESTARI</div>
-            <div class="desc-website">
+            <div
+              class="judul-website"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              CV. RIZKI ALAM LESTARI
+            </div>
+            <div
+              class="desc-website"
+              data-aos="fade-right"
+              data-aos-delay="400"
+            >
               Sebuah startup pertanian yang bergerak dalam budidaya dan produksi
               tanaman herbal dan asitri
             </div>
-            <div class="baca-selengkapnya">
-              <button class="hover-btn rounded-pill py-3 px-4">
+            <div
+              class="baca-selengkapnya"
+              data-aos="fade-right"
+              data-aos-delay="500"
+            >
+              <button
+                onclick="window.location.href='/tentang-kami.html'"
+                class="hover-btn rounded-pill py-3 px-4"
+              >
                 <span>Baca Selengkapnya</span>
               </button>
             </div>
           </div>
-          <div class="col-lg-5 col-md-8 slider">
+          <div
+            class="col-lg-5 col-md-8 slider"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
             <div
               id="carouselExampleControls"
               class="carousel slide carousel-fade"
@@ -167,11 +200,15 @@
       <div class="container">
         <div class="row g-4 flex-lg-row-reverse flex-row">
           <div class="col-lg-7 col-md-6">
-            <div class="section-title">tentang kami</div>
-            <div class="section-headline">CV. RIZKI ALAM LESTARI</div>
+            <div class="section-title" data-aos="fade-left">tentang kami</div>
+            <div class="section-headline" data-aos="fade-left">
+              CV. RIZKI ALAM LESTARI
+            </div>
             <div
+              data-aos="fade-left"
               class="text-desc show-selengkapnya"
               data-max-string="518"
+              data-link="/tentang-kami.html"
               data-style-selengkapnya="btn"
             >
               <p>
@@ -187,7 +224,11 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-5 col-md-6">
+          <div
+            class="col-lg-5 col-md-6"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <img
               src="./assets/images/slider/1.png"
               alt=""
@@ -198,7 +239,7 @@
       </div>
     </section>
     <section id="content-1">
-      <div class="title-section-content">
+      <div class="title-section-content" data-aos="fade-up">
         Kenapa Rizki Alam Lestari <i class="fas fa-question"></i>
       </div>
       <div class="isi-content-1">
@@ -270,9 +311,11 @@
     <div class="container-sections">
       <section id="struktur-team">
         <div class="container">
-          <div class="section-title text-center">struktur perusahaan</div>
+          <div class="section-title text-center" data-aos="fade-up">
+            struktur perusahaan
+          </div>
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-12">
               <section id="super-team">
                 <div class="title-section-content text-md-center text-start">
                   Super Team
@@ -365,7 +408,7 @@
                 </div>
               </section>
             </div>
-            <div class="col-lg-6">
+            <div class="col-12">
               <section id="founder-co">
                 <div class="title-section-content text-md-center text-start">
                   Founder & Co-Founder
@@ -385,11 +428,7 @@
                           </div>
                           <div class="col-12 kolom-informasi">
                             <div class="nama fw-bold fs-4">Ahmad Zainuddin</div>
-                            <div
-                              class="text-desc show-selengkapnya"
-                              data-max-string="150"
-                              data-style-selengkapnya="text"
-                            >
+                            <div class="text-desc">
                               Adalah sosok pelaku usaha tani yang sudah belasan
                               tahun berkecimpung dalam bidang agrbisnis
                               khususnya buah dan hortikultura. Lika liku usaha
@@ -418,19 +457,18 @@
                             <div class="nama fw-bold fs-4">
                               Ust. Budi Hartoyo
                             </div>
-                            <div
-                              class="text-desc show-selengkapnya"
-                              data-max-string="150"
-                              data-style-selengkapnya="text"
-                            >
+                            <div class="text-desc">
                               Seorang ustad muda yang sudah puluhan tahun
                               memimpin sebuah lembaga sosial Yayasan Himmatun
-                              Ayat, himmatunayat.org. Sebuah lembaga yang
-                              berfokus pada pembinaan para yatim dan dhuafa.
-                              Beliau memperkenalkan budidaya tanaman atsiri dan
-                              juga usaha produksi minyak atsiri kepada para
-                              yatim dan dhuafa binaan sebagai salah satu
-                              alternatif sumber peningkatan perekonomian
+                              Ayat,
+                              <a href="https://himmatunayat.org" target="_blank"
+                                >himmatunayat.org</a
+                              >. Sebuah lembaga yang berfokus pada pembinaan
+                              para yatim dan dhuafa. Beliau memperkenalkan
+                              budidaya tanaman atsiri dan juga usaha produksi
+                              minyak atsiri kepada para yatim dan dhuafa binaan
+                              sebagai salah satu alternatif sumber peningkatan
+                              perekonomian
                             </div>
                           </div>
                         </div>
@@ -453,11 +491,7 @@
                             <div class="nama fw-bold fs-4">
                               Kodrat Samadikun
                             </div>
-                            <div
-                              class="text-desc show-selengkapnya"
-                              data-max-string="150"
-                              data-style-selengkapnya="text"
-                            >
+                            <div class="text-desc">
                               Pemilik pembibitan nilam di Madiun, yang mulai
                               terjun ke bisnis perbenihan atsiri sejak tahun
                               2016. Bermula dari permintaan Balai Penelitian
@@ -493,11 +527,7 @@
                             <div class="nama fw-bold fs-4">
                               Candra Panji Nugroho
                             </div>
-                            <div
-                              class="text-desc show-selengkapnya"
-                              data-max-string="150"
-                              data-style-selengkapnya="text"
-                            >
+                            <div class="text-desc">
                               Belasan tahun berkecimpung dalam usaha pertanian
                               yang berbasis kemitraan bersama petani lokal.
                               Mulai dari penangkaran (breeding) benih
@@ -892,17 +922,60 @@
         </div>
       </section>
     </div>
+    <div class="container">
+      <div class="row g-0 flex-lg-row flex-column-reverse">
+        <div class="col-lg-6">
+          <section id="kontak">
+            <div class="title-section-content">Kontak</div>
+            <div class="info-kontak" data-aos="fade-right" data-aos-delay="100">
+              <div class="item">
+                <i class="fas fa-phone-alt"></i>
+                <span>(+62) 8328328383</span>
+              </div>
+            </div>
+            <div class="info-kontak" data-aos="fade-right" data-aos-delay="200">
+              <div class="item">
+                <i class="fas fa-map-marked-alt"></i>
+                <span
+                  >Komp. Grand Sungkono Blok D-17 Jl. Mayjend Sungkono, Surabaya
+                  60225, Jawa Timur</span
+                >
+              </div>
+            </div>
+            <div class="info-kontak" data-aos="fade-right" data-aos-delay="300">
+              <div class="item">
+                <i class="fas fa-envelope"></i>
+                <span>alamlestari.official@gmail.com</span>
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="col-lg-6">
+          <section id="zona-mitra">
+            <div class="title-section-content text-lg-end text-start">
+              Zona Kemitraan
+            </div>
+            <div
+              class="mt-3"
+              data-aos="fade-left"
+              style="overflow: hidden"
+              id="myPanzoom"
+            >
+              <img
+                src="./assets/images/zona-mitra.png"
+                alt=""
+                class="img-fluid panzoom__content"
+              />
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#273036"
-        fill-opacity="1"
-        d="M0,160L80,181.3C160,203,320,245,480,250.7C640,256,800,224,960,208C1120,192,1280,192,1360,192L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-      ></path>
-    </svg>
-    <footer>
+    <footer class="mt-5">
       <div class="content-footer text-light">
-        <div class="container pb-4 pt-2">
+        <div class="container py-4">
           <div class="row g-4 justify-content-between">
             <div class="col-md-3 col-sm-5">
               <div class="title-footer fw-bold fs-5 mb-2">Hubungi Kami</div>
@@ -1125,10 +1198,43 @@
 
     <!-- fancybox -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.0-alpha.4/dist/panzoom.controls.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.0-alpha.4/dist/panzoom.umd.js"></script>
+
+    <!-- AOS -->
+    <script src="./assets/vendor/aos/aos.js"></script>
 
     <!-- owl carousel -->
     <script src="./assets/vendor/owl-carousel/olw-carousel.min.js"></script>
 
+    <script>
+      const kenapaKami = document.querySelectorAll("#content-1 .kolom");
+      const pilarBisnis = document.querySelectorAll("#pilar-bisnis .kolom");
+     
+      const kolomHover1 = document.querySelectorAll("#super-team .kolom-hover");
+      const kolomHover2 = document.querySelectorAll("#founder-co .kolom-hover");
+    
+      kolomHover1.forEach((kh1, i) => {
+        kh1.dataset.aos = (i + 1) % 2 == 1 ? "fade-right" : "fade-left";
+      });
+      kolomHover2.forEach((kh2, i) => {
+        kh2.dataset.aos = (i + 1) % 2 == 1 ? "fade-right" : "fade-left";
+      });
+      kenapaKami.forEach((kk, i) => {
+        kk.dataset.aos = "fade-up";
+        kk.dataset.aosDelay = (i + 1) * 100;
+      });
+      pilarBisnis.forEach((PB, i) => {
+        PB.dataset.aos = "fade-up";
+        PB.dataset.aosDelay = (i + 1) * 100;
+      });
+    </script>
+    <!-- MY AOS SCRIPT -->
+    <script src="./assets/js/aos.js"></script>
+
     <script src="./assets/js/script.js"></script>
+    <script>
+      const myPanzoom = new Panzoom(document.getElementById("myPanzoom"));
+    </script>
   </body>
 </html>

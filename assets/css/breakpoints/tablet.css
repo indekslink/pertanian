@@ -91,4 +91,12 @@
     max-height: 150px;
     max-width: 150px;
   }
+  section#kontak .info-kontak .item {
+    display: flex;
+    font-size: 15px;
+  }
+  section#kontak .info-kontak .item i {
+    margin-right: 5px;
+    font-size: 20px;
+  }
 }

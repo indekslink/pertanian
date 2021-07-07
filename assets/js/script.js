@@ -19,12 +19,6 @@ window.onscroll = () => {
 document.querySelector("button.to-top").addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
-// menuDropdown.addEventListener("click", function () {
-//   this.classList.toggle("show");
-//   this.addEventListener("mouseleave", function () {
-//     this.classList.remove("show");
-//   });
-// });
 
 const menuDropdown = document.querySelectorAll("li.link-dropdown");
 menuDropdown.forEach((mn) => {
@@ -33,38 +27,38 @@ menuDropdown.forEach((mn) => {
   });
 });
 
-$("#struktur-team .owl-carousel").owlCarousel({
-  stagePadding: 30,
-  margin: 10,
-  dots: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    569: {
-      items: 1,
-    },
-    991: {
-      items: 2,
-    },
-    1400: {
-      items: 3,
-    },
-  },
-});
-$("#berita-terkini .owl-carousel").owlCarousel({
-  margin: 10,
-  stagePadding: 20,
-  dots: false,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    569: {
-      items: 2,
-    },
-  },
-});
+// $("#struktur-team .owl-carousel").owlCarousel({
+//   stagePadding: 30,
+//   margin: 10,
+//   dots: true,
+//   responsive: {
+//     0: {
+//       items: 1,
+//     },
+//     569: {
+//       items: 1,
+//     },
+//     991: {
+//       items: 2,
+//     },
+//     1400: {
+//       items: 3,
+//     },
+//   },
+// });
+// $("#berita-terkini .owl-carousel").owlCarousel({
+//   margin: 10,
+//   stagePadding: 20,
+//   dots: false,
+//   responsive: {
+//     0: {
+//       items: 1,
+//     },
+//     569: {
+//       items: 2,
+//     },
+//   },
+// });
 
 // link prevent defaul
 let linkMenu = Array.from(document.querySelectorAll("a.child-menu"));
@@ -83,7 +77,7 @@ let dataText = document.querySelectorAll(".show-selengkapnya");
 dataText.forEach((text, i) => {
   let valueTxt = text.innerHTML.split("");
 
-  let link = "/team/" + i;
+  let link = text.getAttribute("data-link");
   let maxString = text.getAttribute("data-max-string");
 
   let style =
@@ -97,12 +91,12 @@ dataText.forEach((text, i) => {
   }
 });
 function textSelengkapnya(link) {
-  return `<a href="${link}" class="text-small  text-decoration-none prevent-default">...selengkapnya</a>`;
+  return `<a href="${link}" class="text-small  text-decoration-none ">...selengkapnya</a>`;
 }
 function btnSelengkapnya(link) {
   return ` <button
-            
-              class="hover-btn rounded text-small d-block prevent-default  mt-2 py-2 px-3"
+              onclick="window.location.href='${link}'"
+              class="hover-btn rounded text-small d-block  mt-2 py-2 px-3"
             >
               <span>Selengkapnya</span>
             </button>`;
@@ -129,7 +123,7 @@ galleries.forEach((g) => {
   let src = g.getAttribute("src");
   let caption = g.nextElementSibling.innerHTML;
 
-  // tambahakn element lightbox
+  // tambahkan element lightbox
   g.parentElement.innerHTML = elementLightbox("galeri", src, caption, oriHtml);
 });
 

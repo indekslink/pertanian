@@ -76,7 +76,7 @@
   transition: 0.5s ease;
   font-family: var(--poppins);
 }
-.my-nav #parent-menu li:not(.link-dropdown, .child-dropdown) > a::after {
+.my-nav #parent-menu li:not(.child-dropdown) > a::after {
   border-radius: 5px;
   content: "";
   height: 3px;
@@ -87,10 +87,19 @@
   transition: 0.5s ease;
   background-color: #2fc32f;
 }
-.my-nav #parent-menu li:not(.link-dropdown, .child-dropdown) > a:hover::after,
-.my-nav #parent-menu li:not(.link-dropdown, .child-dropdown) > a.active::after {
+.my-nav #parent-menu li:not(.child-dropdown) > a:hover::after,
+.my-nav #parent-menu li:not(.child-dropdown) > a.active::after {
   width: 100%;
   opacity: 1;
+}
+
+.my-nav #parent-menu li.child-dropdown > a {
+  opacity: 0.8;
+}
+.my-nav #parent-menu li.child-dropdown > a:hover,
+.my-nav #parent-menu li.child-dropdown > a.active {
+  opacity: 1;
+  font-weight: bold;
 }
 
 .my-nav .hamburger {
@@ -146,10 +155,11 @@
   top: -10px;
   left: 20px;
   transform: rotate(45deg);
-  z-index: -1;
 }
 .link-dropdown .parent-link-dropdown li {
   padding: 0.5rem 0;
+  position: relative;
+  z-index: 2;
 }
 .link-dropdown .parent-link-dropdown a {
   color: var(--link-dropdown-color) !important;
@@ -281,6 +291,7 @@ button.hover-btn:hover::after {
 }
 section {
   scroll-margin-top: 120px;
+  overflow: hidden;
 }
 section .section-headline {
   font-size: 30px;
@@ -340,15 +351,31 @@ section#pilar-bisnis .child .text-child div:nth-child(2) {
   margin-top: 1rem;
   text-align: justify;
 }
-section#content-1 .row .kolom,
-section#pilar-bisnis .row .kolom,
-.kolom-hover {
-  background-color: #f6f9fc;
-  transition: 1s ease;
+
+.row.parent-kolom {
+  padding: 1rem !important;
 }
-section#content-1 .row .kolom:hover,
-section#pilar-bisnis .row .kolom:hover,
-.kolom-hover:hover {
+.kolom-hover {
+  padding: 0 !important;
+}
+.kolom-hover .card {
+  padding: 0.5rem !important;
+  border-radius: 0;
+}
+section#pilar-bisnis .row,
+section#content-1 .row {
+  padding: 1rem 0.5rem !important;
+}
+section#content-1 .row .kolom .child,
+section#pilar-bisnis .row .kolom .child,
+.kolom-hover .card {
+  height: 100%;
+  background-color: #f6f9fc;
+  transition: 1s ease !important;
+}
+section#content-1 .row .kolom .child:hover,
+section#pilar-bisnis .row .kolom .child:hover,
+.kolom-hover .card:hover {
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 2;
@@ -479,8 +506,17 @@ section#struktur-team .card {
 #galeri img:hover ~ .text-img {
   opacity: 1;
 } */
-
+section#kontak .info-kontak .item {
+  display: flex;
+  font-size: 20px;
+  margin: 1rem 0;
+}
+section#kontak .info-kontak .item i {
+  margin-right: 5px;
+  font-size: 25px;
+}
 footer {
+  overflow: hidden;
   background-color: #273036;
 }
 footer .copyright {
