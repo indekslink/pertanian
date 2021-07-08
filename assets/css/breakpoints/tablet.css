@@ -33,12 +33,10 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  .link-dropdown a {
-    width: 100%;
-  }
+
   .link-dropdown a i {
-    font-size: 25px;
-    float: right;
+    font-size: 18px;
+    margin-left: 3px;
   }
 
   .link-dropdown.show .parent-link-dropdown {

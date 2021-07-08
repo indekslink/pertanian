@@ -78,7 +78,9 @@
         </div>
         <div class="hamburger"><span></span><span></span><span></span></div>
         <ul id="parent-menu">
-          <li><a href="/" class="child-menu active">HOME</a></li>
+          <li>
+            <a href="/" data-link="home" class="child-menu active">HOME</a>
+          </li>
           <li class="link-dropdown">
             <a href="#about-use" class="child-menu dropdown-link"
               >TENTANG <i class="fas fa-angle-down"></i
@@ -90,7 +92,10 @@
                 >
               </li>
               <li class="child-dropdown">
-                <a href="/#struktur-team" class="child-menu"
+                <a
+                  href="/#struktur"
+                  data-link="struktur-team"
+                  class="child-menu"
                   >Struktur Perusahaan</a
                 >
               </li>
@@ -99,7 +104,9 @@
 
           <li><a href="/galeri.html" class="child-menu">GALERI</a></li>
           <li><a href="/berita.html" class="child-menu">BERITA</a></li>
-          <li><a href="/#kontak" class="child-menu link-scroll">KONTAK</a></li>
+          <li>
+            <a href="/#contact" data-link="kontak" class="child-menu">KONTAK</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -309,6 +316,7 @@
     </section>
 
     <div class="container-sections">
+      <div id="struktur" class="target-scroll"></div>
       <section id="struktur-team">
         <div class="container">
           <div class="section-title text-center" data-aos="fade-up">
@@ -545,318 +553,6 @@
               </section>
             </div>
           </div>
-          <!-- <div
-            class="
-              section-selengkap
-              d-flex
-              justify-content-between
-              align-items-center
-              flex-wrap
-            "
-          >
-            <div class="title-section-content text-center">Rincian Team</div>
-            <a href="" class="text-small"
-              >Selengkapnya <i class="fas fa-long-arrow-alt-right"></i
-            ></a>
-          </div> -->
-
-          <!-- <div class="owl-carousel owl-theme mt-3">
-            <div class="card">
-              <div class="card-body">
-                <div class="row gx-3">
-                  <div class="col-md-5 kolom-gambar">
-                    <img
-                      src="./assets/images/teams/2.png"
-                      class="rounded-circle"
-                      alt=""
-                    />
-                    <div class="fw-bold fs-6">Founder</div>
-                  </div>
-                  <div class="col-md-7 kolom-informasi">
-                    <div class="nama fw-bold fs-4">Ahmad Zainuddin</div>
-                    <div
-                      class="text-desc show-selengkapnya"
-                      data-max-string="150"
-                      data-style-selengkapnya="text"
-                    >
-                      Adalah sosok pelaku usaha tani yang sudah belasan tahun
-                      berkecimpung dalam bidang agrbisnis khususnya buah dan
-                      hortikultura. Lika liku usaha budidaya dan pengalamannya
-                      dalam bidang agrobisnis mengantarkan sosok Ahmad Zainuddin
-                      melirik komoditas atsiri.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="row gx-3">
-                  <div class="col-md-5 kolom-gambar">
-                    <img
-                      src="./assets/images/user-default.png"
-                      class="rounded-circle"
-                      alt=""
-                    />
-                    <div class="fw-bold fs-6">Super Team</div>
-                  </div>
-                  <div class="col-md-7 kolom-informasi">
-                    <div class="nama fw-bold fs-4">Supardi</div>
-                    <div
-                      class="text-desc show-selengkapnya"
-                      data-max-string="150"
-                      data-style-selengkapnya="text"
-                    >
-                      sosok yang memperkenalkan komoditas nilam di Teluk
-                      Munjungan Trenggalek pada awal tahun 2000an.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="row gx-3">
-                  <div class="col-md-5 kolom-gambar">
-                    <img
-                      src="./assets/images/teams/1.png"
-                      class="rounded-circle"
-                      alt=""
-                    />
-                    <div class="jabatan fw-bold fs-6">Co-Founder</div>
-                  </div>
-                  <div class="col-md-7 kolom-informasi">
-                    <div class="nama fw-bold fs-4">Ust. Budi Hartoyo</div>
-                    <div
-                      class="text-desc show-selengkapnya"
-                      data-max-string="150"
-                      data-style-selengkapnya="text"
-                    >
-                      Seorang ustad muda yang sudah puluhan tahun memimpin
-                      sebuah lembaga sosial Yayasan Himmatun Ayat,
-                      himmatunayat.org. Sebuah lembaga yang berfokus pada
-                      pembinaan para yatim dan dhuafa. Beliau memperkenalkan
-                      budidaya tanaman atsiri dan juga usaha produksi minyak
-                      atsiri kepada para yatim dan dhuafa binaan sebagai salah
-                      satu alternatif sumber peningkatan perekonomian
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="row gx-3">
-                  <div class="col-md-5 kolom-gambar">
-                    <img
-                      src="./assets/images/user-default.png"
-                      class="rounded-circle"
-                      alt=""
-                    />
-                    <div class="fw-bold fs-6">Super Team</div>
-                  </div>
-                  <div class="col-md-7 kolom-informasi">
-                    <div class="nama fw-bold fs-4">Dilla Dina Udkhiatin</div>
-                    <div
-                      class="text-desc show-selengkapnya"
-                      data-max-string="150"
-                      data-style-selengkapnya="text"
-                    >
-                      tokoh muda pegiat bisnis pertanian dan sekaligus menjadi
-                      kordinator seluruh tim lapangan CV. Rizki Alam Lestari .
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="row gx-3">
-                  <div class="col-md-5 kolom-gambar">
-                    <img
-                      src="./assets/images/teams/3.png"
-                      class="rounded-circle"
-                      alt=""
-                    />
-                    <div class="jabatan fw-bold fs-6">Co-Founder</div>
-                  </div>
-                  <div class="col-md-7 kolom-informasi">
-                    <div class="nama fw-bold fs-4">Kodrat Samadikun</div>
-                    <div
-                      class="text-desc show-selengkapnya"
-                      data-max-string="150"
-                      data-style-selengkapnya="text"
-                    >
-                      Pemilik pembibitan nilam di Madiun, yang mulai terjun ke
-                      bisnis perbenihan atsiri sejak tahun 2016. Bermula dari
-                      permintaan Balai Penelitian Tanaman Obat dan Rempah
-                      (Balittro) untuk membantu menyediaan bibit untuk program
-                      pemerintah. Sejak saat itu pemilik perusahaan Defin Jaya
-                      Mandiri tersebut fokus ke penyediaan bibit nilam dengan
-                      lokasi pembibitan di Dusun Seweru, Desa Kare Kecamatan
-                      Kare dan Dusun Petung Desa Pajaran Kecamatan Sasaran di
-                      Kabupaten Madiun, Jawa Timur.selain itu beliau juga
-                      menjabat sebagai ketua Perkumpulan Penangkar Benih Tanaman
-                      Perkebunan Jawa Timur
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="row gx-3">
-                  <div class="col-md-5 kolom-gambar">
-                    <img
-                      src="./assets/images/user-default.png"
-                      class="rounded-circle"
-                      alt=""
-                    />
-                    <div class="fw-bold fs-6">Super Team</div>
-                  </div>
-                  <div class="col-md-7 kolom-informasi">
-                    <div class="nama fw-bold fs-4">Iswahyudi</div>
-                    <div
-                      class="text-desc show-selengkapnya"
-                      data-max-string="150"
-                      data-style-selengkapnya="text"
-                    >
-                      koordinator mitra petani CV Rizki Alam Lestari di Pantura.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="row gx-3">
-                  <div class="col-md-5 kolom-gambar">
-                    <img
-                      src="./assets/images/teams/4.png"
-                      class="rounded-circle"
-                      alt=""
-                    />
-                    <div class="jabatan fw-bold fs-6">Co-Founder</div>
-                  </div>
-                  <div class="col-md-7 kolom-informasi">
-                    <div class="nama fw-bold fs-4">Candra Panji Nugroho</div>
-                    <div
-                      class="text-desc show-selengkapnya"
-                      data-max-string="150"
-                      data-style-selengkapnya="text"
-                    >
-                      Belasan tahun berkecimpung dalam usaha pertanian yang
-                      berbasis kemitraan bersama petani lokal. Mulai dari
-                      penangkaran (breeding) benih hortikultura, palawija,
-                      hingga supplay untuk fresh market. Selain itu juga pernah
-                      tergabung dalam beberapa perusahaan startup pertanian,
-                      seperti Wijaya Tani, TaniHub, dan GooTani.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="row gx-3">
-                  <div class="col-md-5 kolom-gambar">
-                    <img
-                      src="./assets/images/user-default.png"
-                      class="rounded-circle"
-                      alt=""
-                    />
-                    <div class="fw-bold fs-6">Super Team</div>
-                  </div>
-                  <div class="col-md-7 kolom-informasi">
-                    <div class="nama fw-bold fs-4">Sartuji</div>
-                    <div
-                      class="text-desc show-selengkapnya"
-                      data-max-string="150"
-                      data-style-selengkapnya="text"
-                    >
-                      koordinator dan sekaligus tim lapangan CV. Rizki Alam
-                      Lestari di wilayah Ponorogo dan sekitarnya .
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="row gx-3">
-                  <div class="col-md-5 kolom-gambar">
-                    <img
-                      src="./assets/images/user-default.png"
-                      class="rounded-circle"
-                      alt=""
-                    />
-                    <div class="fw-bold fs-6">Super Team</div>
-                  </div>
-                  <div class="col-md-7 kolom-informasi">
-                    <div class="nama fw-bold fs-4">Efendi</div>
-                    <div
-                      class="text-desc show-selengkapnya"
-                      data-max-string="150"
-                      data-style-selengkapnya="text"
-                    >
-                      tim lapangan CV. Rizki Alam Lestari yang bertugas
-                      memberikan pendampingan di wilayah Pantura .
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="row gx-3">
-                  <div class="col-md-5 kolom-gambar">
-                    <img
-                      src="./assets/images/user-default.png"
-                      class="rounded-circle"
-                      alt=""
-                    />
-                    <div class="fw-bold fs-6">Super Team</div>
-                  </div>
-                  <div class="col-md-7 kolom-informasi">
-                    <div class="nama fw-bold fs-4">Beny Yulianto</div>
-                    <div
-                      class="text-desc show-selengkapnya"
-                      data-max-string="150"
-                      data-style-selengkapnya="text"
-                    >
-                      tim lapangan CV. Rizki Alam Lestari di wilayah Trenggalek
-                      .
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="row gx-3">
-                  <div class="col-md-5 kolom-gambar">
-                    <img
-                      src="./assets/images/user-default.png"
-                      class="rounded-circle"
-                      alt=""
-                    />
-                    <div class="fw-bold fs-6">Super Team</div>
-                  </div>
-                  <div class="col-md-7 kolom-informasi">
-                    <div class="nama fw-bold fs-4">Mulyadi</div>
-                    <div
-                      class="text-desc show-selengkapnya"
-                      data-max-string="150"
-                      data-style-selengkapnya="text"
-                    >
-                      koordinator petani mitra dan sekaligus tim lapangan CV.
-                      Rizki Alam Lestari area Malang .
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </section>
       <section id="pilar-bisnis">
@@ -926,11 +622,12 @@
       <div class="row g-0 flex-lg-row flex-column-reverse">
         <div class="col-lg-6">
           <section id="kontak">
+            <div id="contact" class="target-scroll"></div>
             <div class="title-section-content">Kontak</div>
             <div class="info-kontak" data-aos="fade-right" data-aos-delay="100">
               <div class="item">
                 <i class="fas fa-phone-alt"></i>
-                <span>(+62) 8328328383</span>
+                <span>+62 812-1648-8434</span>
               </div>
             </div>
             <div class="info-kontak" data-aos="fade-right" data-aos-delay="200">
@@ -946,7 +643,6 @@
               <div class="item">
                 <i class="fas fa-envelope"></i>
                 <span>alamlestari.official@gmail.com</span>
-                >
               </div>
             </div>
           </section>
@@ -973,204 +669,93 @@
       </div>
     </div>
 
-    <footer class="mt-5">
-      <div class="content-footer text-light">
+      <footer class="mt-5">
+      <div class="content-footer">
         <div class="container py-4">
           <div class="row g-4 justify-content-between">
             <div class="col-md-3 col-sm-5">
-              <div class="title-footer fw-bold fs-5 mb-2">Hubungi Kami</div>
-              <ul class="list-group list-group-flush m">
-                <li
-                  class="
-                    d-flex
-                    list-group-item
-                    border-0
-                    bg-transparent
-                    text-light
-                    ps-0
-                    p-1
-                    text-small
-                  "
-                >
-                  <i class="me-2 fas fa-phone-alt fs-5"></i>
-                  <span>(+62) 8328328383</span>
-                </li>
-                <li
-                  class="
-                    d-flex
-                    list-group-item
-                    border-0
-                    bg-transparent
-                    text-light
-                    ps-0
-                    p-1
-                    text-small
-                  "
-                >
-                  <i class="me-2 fas fa-map-marked-alt fs-5"></i>
+              <div class="title-footer">Hubungi Kami</div>
+              <div class="list-information">
+                <a>
+                  <i class="fas fa-phone-alt"></i>
+                  <span>+62 812-1648-8434</span>
+                </a>
+                <a>
+                  <i class="fas fa-map-marked-alt"></i>
                   <span
                     >Komp. Grand Sungkono Blok D-17 Jl. Mayjend Sungkono,
                     Surabaya 60225, Jawa Timur</span
                   >
-                </li>
-                <li
-                  class="
-                    d-flex
-                    list-group-item
-                    border-0
-                    bg-transparent
-                    text-light
-                    ps-0
-                    p-1
-                    text-small
-                  "
-                >
-                  <i class="me-2 fas fa-envelope fs-5"></i>
+                </a>
+                <a>
+                  <i class="fas fa-envelope"></i>
                   <span>alamlestari.official@gmail.com</span>
-                </li>
-              </ul>
+                </a>
+              </div>
             </div>
             <div class="col-md-3 col-sm-5">
-              <div class="title-footer fw-bold fs-5 mb-2">Sosial Media</div>
-              <ul class="list-group list-group-flush m">
-                <li
-                  class="
-                    d-flex
-                    list-group-item
-                    border-0
-                    bg-transparent
-                    text-light
-                    ps-0
-                    p-1
-                    text-small
-                  "
-                >
-                  <i class="me-2 fab fa-whatsapp fs-5"></i>
-                  <span>Whatsapp</span>
-                </li>
-                <li
-                  class="
-                    d-flex
-                    list-group-item
-                    border-0
-                    bg-transparent
-                    text-light
-                    ps-0
-                    p-1
-                    text-small
-                  "
-                >
-                  <i class="me-2 fab fa-facebook fs-5"></i>
-                  <span>Facebook.</span>
-                </li>
-                <li
-                  class="
-                    d-flex
-                    list-group-item
-                    border-0
-                    bg-transparent
-                    text-light
-                    ps-0
-                    p-1
-                    text-small
-                  "
-                >
-                  <i class="me-2 fab fa-twitter fs-5"></i>
-                  <span>Twitter</span>
-                </li>
-                <li
-                  class="
-                    d-flex
-                    list-group-item
-                    border-0
-                    bg-transparent
-                    text-light
-                    ps-0
-                    p-1
-                    text-small
-                  "
-                >
-                  <i class="me-2 fab fa-youtube fs-5"></i>
-                  <span>Youtube</span>
-                </li>
-                <li
-                  class="
-                    d-flex
-                    list-group-item
-                    border-0
-                    bg-transparent
-                    text-light
-                    ps-0
-                    p-1
-                    text-small
-                  "
-                >
-                  <i class="me-2 fab fa-instagram fs-5"></i>
-                  <span>Instagram</span>
-                </li>
-              </ul>
+              <div class="title-footer">Sosial Media</div>
+              <div class="list-information">
+                <a href="https://api.whatsapp.com/send?phone=6281216488434&text=Halo">
+                  <i class="fab fa-whatsapp"></i>
+                  <span>WhatsApp</span>
+                </ac>
+                <a>
+                  <i class="fab fa-facebook"></i>
+                  <span
+                    >Facebook</span
+                  >
+                </a>
+                <a>
+                  <i class="fab fa-twitter"></i>
+                  <span
+                    >Twitter</span
+                  >
+                </a>
+                <a>
+                  <i class="fab fa-instagram"></i>
+                  <span
+                    >Instagram</span
+                  >
+                </a>
+                <a>
+                  <i class="fab fa-youtube"></i>
+                  <span
+                    >Youtube</span
+                  >
+                </a>
+                
+
+              </div>
             </div>
             <div class="col-md-3 col-sm-5">
-              <div class="title-footer fw-bold fs-5 mb-2">Tentang Kami</div>
-              <ul class="list-group list-group-flush m">
-                <li
-                  class="
-                    d-flex
-                    list-group-item
-                    border-0
-                    bg-transparent
-                    text-light
-                    ps-0
-                    p-1
-                    text-small
-                  "
-                >
+              <div class="title-footer">Tentang Kami</div>
+              <div class="list-information">
+                <a href="/tentang-kami.html">
+                  
                   <span>Informasi Perusahaan</span>
-                </li>
-                <li
-                  class="
-                    d-flex
-                    list-group-item
-                    border-0
-                    bg-transparent
-                    text-light
-                    ps-0
-                    p-1
-                    text-small
-                  "
-                >
-                  <span>Sturktur Perusahaan</span>
-                </li>
-                <li
-                  class="
-                    d-flex
-                    list-group-item
-                    border-0
-                    bg-transparent
-                    text-light
-                    ps-0
-                    p-1
-                    text-small
-                  "
-                >
-                  <span>Berita Agrobisnis & Asitri</span>
-                </li>
-                <li
-                  class="
-                    d-flex
-                    list-group-item
-                    border-0
-                    bg-transparent
-                    text-light
-                    ps-0
-                    p-1
-                    text-small
-                  "
-                >
+                </a>
+                   <a href="/#struktur">
+                  
+                  <span>Struktur Perusahaan</span>
+                </a>
+                  <a href="/galeri.html">
+                  
                   <span>Galeri</span>
-                </li>
-              </ul>
+                </a>
+                   <a href="/berita.html">
+                  
+                  <span>Berita</span>
+                </a>
+                 <a href="/#contact">
+                  
+                  <span>Kontak</span>
+                </a>
+                
+
+              </div>
             </div>
+            
           </div>
         </div>
         <div class="copyright py-2 text-center">
@@ -1210,10 +795,10 @@
     <script>
       const kenapaKami = document.querySelectorAll("#content-1 .kolom");
       const pilarBisnis = document.querySelectorAll("#pilar-bisnis .kolom");
-     
+
       const kolomHover1 = document.querySelectorAll("#super-team .kolom-hover");
       const kolomHover2 = document.querySelectorAll("#founder-co .kolom-hover");
-    
+
       kolomHover1.forEach((kh1, i) => {
         kh1.dataset.aos = (i + 1) % 2 == 1 ? "fade-right" : "fade-left";
       });

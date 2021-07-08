@@ -19,8 +19,8 @@
   section .section-headline {
     font-size: 25px;
   }
-  section {
-    scroll-margin-top: 100px;
+  .target-scroll {
+    scroll-margin-top: 80px;
   }
   #galeri .card a {
     height: 150px;

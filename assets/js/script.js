@@ -7,14 +7,65 @@ hamburgerMenu.addEventListener("click", function () {
 
 //
 window.onscroll = () => {
-  document
-    .querySelector(".my-nav")
-    .classList.toggle("show", window.scrollY > 50);
+  const scroll = window.scrollY;
+
+  document.querySelector(".my-nav").classList.toggle("show", scroll > 50);
 
   document
     .querySelector("button.to-top")
-    .classList.toggle("show", window.scrollY > 100);
+    .classList.toggle("show", scroll > 100);
+
+  if (document.querySelector('a.child-menu[data-link="home"]')) {
+    addActiveMenuOnScroll(linkActiveOnScroll(scroll));
+  }
 };
+function linkActiveOnScroll(scroll) {
+  let link = ["kontak", "struktur-team"];
+
+  let result = "";
+  link.forEach((el) => {
+    let section = document.getElementById(el);
+    if (el == "struktur-team") {
+      section = section.parentElement;
+    }
+    if (section) {
+      let top = section.offsetTop - 150;
+      let sectionArea = top + section.offsetHeight;
+
+      let obj = { id: el, area: sectionArea, top };
+
+      if (scroll > obj.top && scroll < obj.area) {
+        result = obj.id;
+      }
+    }
+  });
+  return result;
+}
+function addActiveMenuOnScroll(namaMenu) {
+  if (!namaMenu) {
+    namaMenu = "home";
+  }
+
+  const navMenu = document.querySelectorAll(".my-nav a.child-menu");
+
+  navMenu.forEach((menu) => {
+    if (menu.classList.contains("active")) {
+      menu.classList.remove("active");
+    }
+  });
+  const linkActive = document.querySelector(
+    `a.child-menu[data-link="${namaMenu}"]`
+  );
+  if (linkActive) {
+    linkActive.classList.add("active");
+    let linkDropdownOrNot =
+      linkActive.parentElement.parentElement.parentElement;
+
+    if (linkDropdownOrNot.classList.contains("link-dropdown")) {
+      linkDropdownOrNot.children[0].classList.add("active");
+    }
+  }
+}
 
 document.querySelector("button.to-top").addEventListener("click", function () {
   window.scrollTo(0, 0);
