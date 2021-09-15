@@ -1,0 +1,38 @@
+@media (max-width: 569px) {
+  section#tentang .nama-website {
+    font-size: 25px !important;
+  }
+  /* section#home {
+    background-image: url(../../images/bg/blob-scene-haikei-mobile.svg) !important;
+  } */
+  section#home .slider img {
+    height: 50vh !important;
+  }
+  .my-nav .logo img {
+    width: 60px;
+    height: 60px;
+  }
+  .my-nav .logo span {
+    margin-left: 0px;
+    font-size: 22px;
+  }
+  section .section-headline {
+    font-size: 25px;
+  }
+  .target-scroll {
+    scroll-margin-top: 80px;
+  }
+  #galeri .card a {
+    height: 150px;
+  }
+  #berita-terkini img {
+    max-height: 110px;
+    max-width: 110px;
+  }
+  #berita-terkini .info-news .title-news {
+    font-size: 15px;
+  }
+  #berita-terkini .info-news {
+    font-size: 12px;
+  }
+}

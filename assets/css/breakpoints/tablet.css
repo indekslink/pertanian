@@ -1,0 +1,100 @@
+@media (max-width: 767px) {
+  .my-nav .hamburger {
+    display: flex;
+    /* margin: 0 auto; */
+  }
+  .my-nav .container {
+    flex-wrap: wrap;
+  }
+  .my-nav #parent-menu {
+    transition: 0.5s linear;
+    flex-direction: column;
+    height: 0;
+    align-items: flex-start;
+    padding: 0 0.5rem;
+    justify-content: space-evenly;
+    overflow: hidden;
+    background-color: #273036;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .my-nav #parent-menu a {
+    color: white !important;
+  }
+  .my-nav #parent-menu.show {
+    height: 60vh;
+    margin-top: 0.5rem;
+  }
+  .link-dropdown {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .link-dropdown a i {
+    font-size: 18px;
+    margin-left: 3px;
+  }
+
+  .link-dropdown.show .parent-link-dropdown {
+    height: 100%;
+    margin-top: 1rem;
+  }
+  .link-dropdown.show i {
+    transform: rotate(180deg);
+  }
+  .link-dropdown i {
+    transition: 0.5s ease;
+  }
+  .link-dropdown .parent-link-dropdown::before {
+    display: none;
+  }
+  .link-dropdown .parent-link-dropdown {
+    list-style-type: none;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    margin: 0;
+    overflow: hidden;
+    height: 0;
+    padding: 0px 0.5rem;
+
+    position: initial;
+  }
+
+  .link-dropdown .parent-link-dropdown li {
+    padding: 0.5rem 0;
+  }
+
+  section#home .text {
+    height: 90vh !important;
+  }
+  section#home .text .judul-website {
+    font-size: 30px;
+  }
+  section#content-1 .child {
+    padding-left: 0.5;
+    padding-right: 0.5;
+  }
+  #galeri .card a {
+    height: 200px;
+  }
+  #berita-terkini .info-news .title-news {
+    font-size: 1rem;
+  }
+  #berita-terkini img {
+    max-height: 150px;
+    max-width: 150px;
+  }
+  section#kontak .info-kontak .item {
+    display: flex;
+    font-size: 15px;
+  }
+  section#kontak .info-kontak .item i {
+    margin-right: 5px;
+    font-size: 20px;
+  }
+}

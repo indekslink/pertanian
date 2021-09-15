@@ -1,0 +1,19 @@
+@media (max-width: 991px) {
+  section#home {
+    height: auto;
+  }
+  /* section#home {
+    background-image: url(../../images/bg/blob-scene-haikei-tablet.svg);
+  } */
+  section#home .text {
+    height: 60vh;
+  }
+  section#home .slider img {
+    height: 60vh;
+  }
+
+  .section-content .kolom-berita {
+    border-left: 0;
+    border-top: 2px solid #dedede;
+  }
+}
