@@ -22,8 +22,8 @@
   .target-scroll {
     scroll-margin-top: 80px;
   }
-  #galeri .card a {
-    height: 150px;
+  #galeri .my-grid {
+    columns: 2;
   }
   #berita-terkini img {
     max-height: 110px;

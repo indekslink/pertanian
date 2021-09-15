@@ -79,8 +79,9 @@
     padding-left: 0.5;
     padding-right: 0.5;
   }
-  #galeri .card a {
-    height: 200px;
+
+  #galeri .my-grid {
+    columns: 3;
   }
   #berita-terkini .info-news .title-news {
     font-size: 1rem;
