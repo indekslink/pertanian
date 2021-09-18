@@ -5,6 +5,9 @@
   /* section#home {
     background-image: url(../../images/bg/blob-scene-haikei-tablet.svg);
   } */
+  #galeri .my-grid {
+    columns: 3;
+  }
   section#home .text {
     height: 60vh;
   }
